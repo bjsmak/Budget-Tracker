@@ -17,7 +17,14 @@ app.use(express.json());
 app.use(express.static("public"));
 console.log(process.env.ATLAS);
 
-mongoose.connect(process.env.MONGODB_URI || process.env.ATLAS );
+mongoose.connect(process.env.MONGODB_URI || process.env.ATLAS,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
+    }
+  );
 
 // routes
 app.use(require("./routes/api.js"));
