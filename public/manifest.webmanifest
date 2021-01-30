@@ -1,19 +1,14 @@
 {
     "name":"Budget Tracker",
     "short_name":"Tracker",
-    "start_url":"/index.html",
-    "display": "standalone",
-    "orientation": "portrait-primary",
     "icons": [
         {
-            "src":"icons/icon-192x192.png",
+            "src":"icons/icon-144x144.png",
             "type":"image/png",
-            "sizes":"192x192"
-        },
-        {
-            "src":"icons/icon-512x512.png",
-            "type":"image/png",
-            "sizes":"512x512"
+            "sizes":"144x144"
         }
-    ]
+    ],
+    "start_url":"/index.html",
+    "display": "standalone",
+    "orientation": "portrait-primary"
 }
